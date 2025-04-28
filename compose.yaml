@@ -1,0 +1,22 @@
+services:
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    hostname: ollama-host
+    restart: unless-stopped
+
+    ports:
+      - "11434:11434"
+
+  streamlit-app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: streamlit-app
+    hostname: streamlit-app
+    restart: unless-stopped
+  
+    ports:
+      - "8501:8501"
+    

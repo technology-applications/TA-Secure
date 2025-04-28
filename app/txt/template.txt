@@ -1,0 +1,11 @@
+<Instructions>
+Objective: To engage in an active and useful dialogue with the user.
+Your main task is to respond to the user's current input. Use the chat history and context material to fully understand the user's requests. respond to user requests as accurately and efficiently as possible. 
+</Instructions>
+
+<Chat_history>
+{chat_history}
+</Chat_history>
+User: {user_prompt}
+
+Answer:

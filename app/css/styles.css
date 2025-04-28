@@ -1,0 +1,271 @@
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.stMain {
+    font-family: "Playfair Display", serif;
+    height: auto;
+    min-height: 100%;
+    background:
+		  radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#063321 68% 70%,#0000 72%) 60px 60px/calc(2*60px) calc(2*60px),
+		  radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#063321 68% 70%,#0000 72%) 60px 60px/calc(2*60px) calc(2*60px),
+		  radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#063321 68% 70%,#0000 72%) 0 0/calc(2*60px) calc(2*60px),
+		  radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#063321 68% 70%,#0000 72%) 0 0/calc(2*60px) calc(2*60px),
+		  repeating-conic-gradient(#1D2021 0 25%,#0000 0 50%) 0 0/calc(2*60px) calc(2*60px),
+		  radial-gradient(#0000 66%,#063321 68% 70%,#0000 72%) 0 calc(60px/2)/60px 60px
+		  #1D2021;
+}
+
+.stMainBlockContainer { 
+    padding: 2rem 7rem;
+}
+
+@media (max-width: 1250px) {
+    .stMainBlockContainer {
+        padding: 2rem 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .stMainBlockContainer {
+        padding: 2rem 2rem;
+    }
+}
+
+.stSidebar{
+    background: #262730;
+    background: linear-gradient(to top, #262730 75%, #063321 100%);
+}
+
+[data-testid="stFullScreenFrame"]{
+    display: flex;
+    justify-content: center;
+}
+
+.stImage{
+    padding-top: 3rem;
+}
+
+@media (max-width: 1250px) {
+    .stImage{
+        padding-top: 2.8rem;
+    }
+    .stImage img {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .stImage{
+        padding-top: 2.4rem;
+    }
+    .stImage img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    margin: 2px;
+    padding: 3px 8px;
+}
+
+
+@media (max-width: 1250px) {
+    .feedback {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .feedback {
+        font-size: 0.6rem;
+    }
+}
+
+.st-key-custom-b1 {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 10;
+}
+
+.st-key-custom-b2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.st-key-custom-b3 {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 10;
+}
+
+[data-testid="stElementToolbar"]{
+    visibility: hidden;
+}
+
+[data-testid="stMarkdownContainer"] {
+    font-family: "Playfair Display", serif;
+}
+
+[data-testid="stMarkdownContainer"] ul {
+    margin: 0;
+}
+
+.custom-h1 {
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 3px 1px 10px rgba(48, 250, 238, 0.97);
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    margin: 0.2rem;
+    padding: 0.3rem 0.8rem;
+    border-bottom: 0.3rem solid;
+    animation: rainbow 120s linear infinite;
+}
+
+@media (max-width: 1250px) {
+    .custom-h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .custom-h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.custom-h2 {
+    text-shadow: 3px 1px 10px rgba(190, 63, 52, 0.97);
+    font-family: "Playfair Display", serif;
+    font-size: 2.1rem;
+    margin: 2px;
+    padding: 3px 8px;
+    border-bottom: 3px solid;
+    animation: rainbow 120s linear infinite;
+}
+
+.c-hover {
+    visibility: hidden;
+    text-shadow: none
+    background-color: #555;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 10%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.custom-h2:hover .c-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 1250px) {
+    .custom-h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .custom-h2 {
+        font-size: 1.6rem;
+    }
+}
+
+.custom-h3 {
+    text-shadow: 3px 1px 10px rgba(190, 63, 52, 0.97);
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    margin: 2px;
+    padding: 3px 8px;
+    border-bottom: 3px solid;
+    animation: rainbow 120s linear infinite;
+}
+
+
+@media (max-width: 1250px) {
+    .custom-h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .custom-h3 {
+        font-size: 1rem;
+    }
+}
+
+@keyframes rainbow {
+    0% { border-bottom-color: #5C0000; }
+    14% { border-bottom-color: #C65D00; }
+    28% { border-bottom-color: #BDAA00; }
+    42% { border-bottom-color: #8B4500; }
+    57% { border-bottom-color: #A0522D; }
+    100% { border-bottom-color: #5C0000; }
+}
+
+.moving-rainbow-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    animation: move 60s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+        background-color: #8B0000;
+    }
+    10% {
+        left: calc(100% - 50px);
+        background-color: #FF8C00;
+    }
+    20% {
+        left: calc(100% - 50px);
+        background-color: #FFD700;
+    }
+    30% {
+        left: 0;
+        background-color: #006400;
+    }
+    42% {
+        left: 0;
+        background-color: #00008B;
+    }
+    57% {
+        left: calc(100% - 50px);
+        background-color: #4B0082;
+    }
+    71% {
+        left: calc(100% - 50px);
+        background-color: #8B008B;
+    }
+    85% {
+        left: 0;
+        background-color: #8B0000;
+    }
+    100% {
+        left: 0;
+        background-color: #8B0000;
+    }
+}
