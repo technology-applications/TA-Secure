@@ -3,10 +3,7 @@
 ## 🎉 Welcome to the Demo AI App!
 This application showcases the seamless integration of various technologies for leveraging AI agents. These AI agents operate directly on your own PC, which enhances the security of your data. You can interact with powerful language models without the need for external servers, ensuring that your sensitive information remains private and secure. Experience how simple and efficient collaboration with artificial intelligence can be, all while maintaining control over your data.
 
-In this example we use a small model. The response will be slow! So do not wonder! The model can be replaced by other models such as Mistral. At TA! at the moment as freelancer growing community, we develop customized solutions based on the needs of our clients. 
-
-
-Amer says:In this example we use a small model. The response will be slow! So do not wonder! The model can be replaced by other models such as Mistral. At TA! at the moment as freelancer growing community, we develop customized solutions based on the needs of our Clients course I can develop the agents for my customers, so that advanced functions can be implented.
+In this example we use a small model. The response will be slow! So do not wonder! The model can be replaced by other models such as Mistral. At TA! at the moment as freelancer growing community, we develop customized solutions based on the needs of our Clients course I can develop the agents for my customers, so that advanced functions can be implented.
 
 ## 📂 Table of Contents
 - [Technologies Used](#technologies-used)
