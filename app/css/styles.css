@@ -43,32 +43,6 @@ header {visibility: hidden;}
     justify-content: center;
 }
 
-.stImage{
-    padding-top: 3rem;
-}
-
-@media (max-width: 1250px) {
-    .stImage{
-        padding-top: 2.8rem;
-    }
-    .stImage img {
-        width: 95%;
-        height: auto;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 900px) {
-    .stImage{
-        padding-top: 2.4rem;
-    }
-    .stImage img {
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-    }
-}
-
 .feedback {
     display: flex;
     justify-content: space-between;
@@ -89,27 +63,6 @@ header {visibility: hidden;}
     .feedback {
         font-size: 0.6rem;
     }
-}
-
-.st-key-custom-b1 {
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    z-index: 10;
-}
-
-.st-key-custom-b2 {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
-}
-
-.st-key-custom-b3 {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    z-index: 10;
 }
 
 [data-testid="stElementToolbar"]{
@@ -158,27 +111,6 @@ header {visibility: hidden;}
     animation: rainbow 120s linear infinite;
 }
 
-.c-hover {
-    visibility: hidden;
-    text-shadow: none
-    background-color: #555;
-    font-size: 0.8rem;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 80%;
-    left: 10%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.custom-h2:hover .c-hover {
-    visibility: visible;
-    opacity: 1;
-}
-
 @media (max-width: 1250px) {
     .custom-h2 {
         font-size: 1.8rem;
@@ -188,29 +120,6 @@ header {visibility: hidden;}
 @media (max-width: 900px) {
     .custom-h2 {
         font-size: 1.6rem;
-    }
-}
-
-.custom-h3 {
-    text-shadow: 3px 1px 10px rgba(190, 63, 52, 0.97);
-    font-family: "Playfair Display", serif;
-    font-size: 1.4rem;
-    margin: 2px;
-    padding: 3px 8px;
-    border-bottom: 3px solid;
-    animation: rainbow 120s linear infinite;
-}
-
-
-@media (max-width: 1250px) {
-    .custom-h3 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 900px) {
-    .custom-h3 {
-        font-size: 1rem;
     }
 }
 
